@@ -1,0 +1,24 @@
+# ml-capstone — ноутбук + тренування + eval (Python 3.12, Intel Mac / MPS)
+# Сервінг має власні (легші, CPU-only) депи: serve/requirements.txt
+
+# ── DL-ядро (звірено з CAP_A) ──
+accelerate==1.14.0
+beautifulsoup4==4.14.3
+captum==0.8.0
+datasets==5.0.0
+matplotlib==3.10.9
+nbconvert==7.17.1
+nbformat==5.10.4
+numpy==1.26.4
+onnx==1.22.0
+onnxruntime==1.23.2
+pandas==3.0.3
+scikit-learn==1.9.0
+scipy==1.17.1          # Spearman-валідація шкали (src/eval_scale.py)
+seaborn==0.13.2
+torch==2.2.2
+transformers==4.57.6
+
+# ── Моделі/трекінг: W&B pull (scripts/fetch_models.py) ──
+wandb==0.28.0
+PyYAML==6.0.3

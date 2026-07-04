@@ -1,0 +1,20 @@
+# HW3 serving deps (CPU-only). torch is installed separately in the Dockerfile
+# from the CPU wheel index to keep the image small.
+fastapi==0.121.2
+uvicorn[standard]==0.34.3
+pydantic==2.12.4
+transformers==4.57.6
+beautifulsoup4==4.14.3
+numpy==1.26.4
+wandb==0.28.0
+
+# ONNX-INT8 serving (default /predict backend) + export/quantization
+onnx==1.22.0
+onnxruntime==1.23.2
+
+# Explainability (/explain, on-demand Integrated Gradients)
+captum==0.8.0
+
+# HW4 monitoring — Prometheus instrumentation + /metrics endpoint
+prometheus-client==0.21.1
+prometheus-fastapi-instrumentator==7.0.0

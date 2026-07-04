@@ -1,0 +1,34 @@
+# ── Секрети (НІКОЛИ не комітити) ──
+.env
+.env.*
+*.key
+wandb/
+
+# ── Важкі артефакти поза git (без LFS) ──
+# Деліверабл = виконаний ноутбук з виводами; важкі бінарники не потрібні читачу,
+# а для перезапуску тягнуться з W&B / регенеруються ноутбуком.
+# PyTorch-ваги (256 MB × 2) — опційне посилання на W&B у README
+model/
+# ONNX (FP32 256 MB + INT8 64 MB) — регенерується ноутбуком (F7) / W&B
+onnx/*.onnx
+# спліти (train 33 MB) — регенеруються ноутбуком (F0: load_dataset + split) / DVC
+data/train.parquet
+data/val.parquet
+data/test.parquet
+out_distilbert/
+out_aug/
+
+# ── Python ──
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# ── IDE / OS ──
+.idea/
+.vscode/
+.DS_Store
+
+# ── PyCharm-заглушка ──
+main.py

@@ -1,0 +1,22 @@
+[
+  {
+    "_note": "obvious phishing — CEO-fraud wire transfer, urgency + secrecy",
+    "subject": "URGENT wire transfer needed now",
+    "html": "<p>Hi John,</p><p>I'm in a meeting and need you to process a wire transfer of $48,000 to a new vendor immediately. Keep this strictly confidential. Send confirmation to my personal address once done.</p><p>Thanks</p>"
+  },
+  {
+    "_note": "subtle phishing — plausible policy update with a link to 'the portal'",
+    "subject": "Updated Q3 travel policy",
+    "html": "<p>Hi John,</p><p>We've refreshed the travel and expense policy ahead of the new quarter. Please review the changes in the portal at <a href=\"http://intranet-hr-portal.example.net/policy\">the HR portal</a> when you have a moment.</p><p>Best, HR Team</p>"
+  },
+  {
+    "_note": "legit — internal meeting notes, no ask, no link",
+    "subject": "Notes from today's planning meeting",
+    "html": "<p>Hi all,</p><p>Great discussion today. Key decisions: we ship the beta in two weeks and Maria owns the rollout plan. No action needed from most of you.</p><p>Thanks!</p>"
+  },
+  {
+    "_note": "legit — routine newsletter",
+    "subject": "Weekly engineering digest",
+    "html": "<p>Hi team,</p><p>This week: the search reindex finished, CI is back under 10 minutes, and the on-call rota for next month is posted in the wiki. Have a good weekend.</p>"
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "model": "Claude Opus 4.8 (zero-shot)",
+    "F1": 1.0,
+    "Acc": 1.0,
+    "Prec": 1.0,
+    "Rec": 1.0
+  },
+  {
+    "model": "DistilBERT (ours, calib)",
+    "F1": 1.0,
+    "Acc": 1.0,
+    "Prec": 1.0,
+    "Rec": 1.0
+  },
+  {
+    "model": "TF-IDF+LogReg (baseline)",
+    "F1": 1.0,
+    "Acc": 1.0,
+    "Prec": 1.0,
+    "Rec": 1.0
+  }
+]

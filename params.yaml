@@ -1,0 +1,30 @@
+# HW2 — training hyperparameters (single source of truth for src/train.py)
+seed: 42
+
+data:
+  source: parquet          # parquet (DVC splits) | hf (rebuild from HuggingFace, for Colab)
+
+model:
+  name: distilbert-base-uncased
+  max_length: 256          # Colab GPU can afford 256; covers most emails fully
+
+train:
+  epochs: 2                # Colab GPU: bump to 3-4; MPS keep 2
+  lr: 2.0e-5
+  batch_size: 16           # MPS limit; Colab GPU: 32
+  weight_decay: 0.01
+
+# Augmented variant (continue-train from base on corporate-style synthetic data).
+# Mirrors capstone F9: 4000 public + synth.gen(n_phish, n_legit) oversampled x2.
+augment:
+  lr: 1.0e-5
+  epochs: 2
+  n_public: 4000
+  synth_n_phish: 300
+  synth_n_legit: 300
+  synth_oversample: 2
+  synth_seed: 123
+
+wandb:
+  project: phishing-scorer
+  entity: null             # null -> your default W&B entity (from `wandb login`)
