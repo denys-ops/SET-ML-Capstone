@@ -245,4 +245,4 @@ https://wandb.ai/denkondrat13-set-university/phishing-scorer
 
 - Трекінг експериментів (W&B, публічний): https://wandb.ai/denkondrat13-set-university/phishing-scorer
 - MLOps-обгортка (DVC, W&B, FastAPI, Prometheus/Grafana, Evidently, CI):
-  `setuniversity-mlops-s26/Course-Project/phishing-scorer`
+  `https://github.com/denys-ops/setuniversity-mlops-s26/Course-Project/phishing-scorer`
